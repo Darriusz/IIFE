@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IIFE</title>
+<script type="text/javascript" src="js/script1.js"></script>
+<script type="text/javascript" src="js/script2.js"></script>
+<script type="text/javascript" src="js/script3.js"></script>
+</head>
+<body>
+<h1>IIFE</h1>
+<h2>Immediately Invoked Function Expression</h2>
+<p>(function (){<br>
+........;<br>
+})();<br> the whole function in its own parentheses to keep it together and then (); to execute it</p>
+<p>
+When a later script invokes different functions in different script files but having variable of the same name, however we want the variables to be local to these individual functions.</p>
+<ul>
+	<li>The commented out functions dont't work properly when invoked from script3 as var name in gets the same value in both functions because it sits in the global scope (window)</li>
+	<li>Solution: <b>fake namespaces.</b> In both functions we create a different object (in global scope) whose property is the name</li>
+
+
+</ul>
+See the js folder.
+</body>
+</html>

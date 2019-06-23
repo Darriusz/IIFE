@@ -1,0 +1,2 @@
+greeter.greeting();
+hi.czesc();
